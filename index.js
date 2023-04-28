@@ -4,6 +4,8 @@ const path = require('path');
 
 const app = express();
 
+app.use('/', require('./routes/index'));
+
 app.listen(port, function(err){
      if(err){
         console.log(`error occurred: ${err}`);
